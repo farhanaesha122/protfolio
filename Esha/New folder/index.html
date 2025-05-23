@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esha's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #dbd8d8 0%, #e7e5e5 100%);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(120deg, #c26cf3, #bc8bf3);
+            color: rgb(253, 253, 255);
+            padding: 60px 20px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            background: #6969f5;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #18cfe7;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            animation: popIn 1.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgb(255, 255, 255);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeUp 1.2s ease forwards;
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #e260e2;
+
+            padding-left: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .project-img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+        }
+
+        .project-img:hover {
+            transform: scale(1.02);
+        }
+
+        .download-link {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #dd60e9;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-link:hover {
+            background-color: #e44fd7;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="WhatsApp Image 2025-05-23 at 14.14.39_452050aa.jpg" alt="Esha Profile Picture" class="profile-img">
+        <h1>Hi I'm Farhana Nishat Esha</h1>
+        <p>Curious | Innovative | Tech Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2> About Me</h2>
+        <p>Hello! I’m Esha, a tech enthusiast with a passion for robotics, innovation, and turning ideas into reality
+            through technology. I enjoy learning new skills, especially in the fields of AI, electronics, and software
+            development.</p>
+    </div>
+
+    <div class="container" id="skills">
+        <h2>🛠 Skills</h2>
+        <ul>
+            <li>Arduino Programming</li>
+            <li>Python</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Hardware Prototyping</li>
+            <li>Project Documentation</li>
+        </ul>
+    </div>
+
+    <div class="container" id="project">
+        <h2> Project: Interactive Q&A Robot</h2>
+        <img src="WhatsApp Image 2025-05-23 at 14.16.29_80172784.jpg" alt="Project Photo" class="project-img">
+        <p><strong>Role:</strong> Procurement Specialist</p>
+        <p><strong>Team ID:</strong> 12211057</p>
+        <p><strong>Project Overview:</strong> The Interactive Q&A Robot is a smart, Arduino-based robot designed to
+            respond to user queries, perform movements, and simulate conversation using artificial intelligence.</p>
+        <h3> Technologies Used</h3>
+        <ul>
+            <li>Arduino Uno</li>
+            <li>Python for AI</li>
+            <li>Servo Motors</li>
+            <li>Bluetooth Module</li>
+            <li>MicroSD Card and Battery System</li>
+        </ul>
+        <h3> Project Phases</h3>
+        <ul>
+            <li>Requirement Analysis & Budget Planning</li>
+            <li>Design & Coding using Incremental Process Model</li>
+            <li>System Testing & Robot Assembly</li>
+            <li>Final Presentation & Documentation</li>
+        </ul>
+        <a href="Documentation of Interactive Q & A Robot .pdf" class="download-link" target="_blank">📄 View Full
+            Project Report</a>
+    </div>
+
+    <center>
+        <div class="container" id="contact">
+            <h2> Contact</h2>
+            <p>Feel free to connect with me for collaborations or project discussions!</p>
+            <p><strong>Email:</strong> nusratesah01@gmail.com</p>
+            <p><strong>Phone:</strong> +880 1720-903716</p>
+        </div>
+    </center>
+
+    <script>
+        // Animate containers when they come into view
+        const containers = document.querySelectorAll('.container');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeUp 1s ease forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        containers.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
